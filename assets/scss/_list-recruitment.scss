@@ -1,0 +1,162 @@
+.page-banner {
+    &.page-banner-normal {
+        padding: 35px 0 25px;
+
+        .page-banner-img {
+            text-align: right;
+
+            img {
+                width: initial;
+            }
+        }
+    }
+}
+
+.cruitments {
+    margin-bottom: 180px;
+
+    .heading-block {
+        margin-bottom: 36px;
+
+        .title {
+            .icon-title {
+                &:before {
+                    content: '';
+                    left: -10px;
+                    top: -50px;
+                }
+            }
+        }
+
+        .desc {
+            font-size: 18px;
+            max-width: 862px;
+            margin: 0 auto;
+        }
+    }
+
+    .list-cruitment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 36px 7.6%;
+    }
+
+    .cruitment-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 25px 50px;
+        border-radius: 10px;
+        gap: 24px 11.5%;
+        box-shadow: 0 0 30px 0 rgba(#000, 0.1);
+        transition: all 0.35s ease;
+
+        &:hover {
+            box-shadow: 0 0 30px 0 rgba($red, 0.25); 
+        }
+
+        .cruitment-logo {
+            flex: 0 0 72px;
+            max-width: 72px;
+            border-radius: 50%;
+            background: $red;
+            padding: 10px;
+        }
+
+
+        .cruitment-detail {
+            flex: 1;
+
+            h4 {
+                font-size: 20px;
+                font-weight: 700;
+                line-height: 1.2;
+                margin-bottom: 10px;
+            }
+        }
+
+        .recuitment-info-wrap {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cruitment-info {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            margin-bottom: 3px;
+
+            img {
+                flex: 0 0 15px;
+                max-width: 15px;
+            }
+            
+            span {
+                line-height: 1.7;
+            }
+        }
+
+        .recruitment-btns {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 50px;
+            row-gap: 12px;
+            align-items: center;
+            margin-top: 10px;
+
+            .recruitment-status {
+                font-size: 12px;
+                color: $red;
+            }
+
+            .btn-recruitment {
+                font-size: 12px;
+                line-height: 1.2;
+                font-weight: 600;
+                padding: 8px 10px;
+            }
+        }
+    }
+}
+
+@include tablet {
+    .cruitments {
+        margin-bottom: 80px;
+        
+        .cruitment-item {
+            flex-wrap: wrap;
+            padding: 24px;
+
+            .cruitment-detail {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        }
+    }
+}
+
+@include landscape-phone {
+    .cruitments {
+        .list-cruitment {
+            grid-template-columns: 1fr;
+        }
+
+        .cruitment-item {
+            .cruitment-detail {
+                flex: 1;
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .cruitments {
+        .cruitment-item {
+            .cruitment-detail {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

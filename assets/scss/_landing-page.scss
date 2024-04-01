@@ -1,0 +1,802 @@
+.form-register {
+    position: relative;
+    background: url('../images/landing-page-banner.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    margin-bottom: 98px;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: $red;
+        opacity: 0.7;
+    }
+
+    .form-register-wrap {
+        position: relative;
+        display: flex;
+        column-gap: 85px;
+        flex-wrap: wrap;
+        padding: 42px 0 92px;
+    }
+
+    .logo {
+        display: block;
+        position: relative;
+        flex: 0 0 100%;
+        max-width: 100%;
+        z-index: 3;
+
+        img {
+            max-height: 144px;
+            width: initial;
+        }
+    }
+
+    .heading-block {
+        position: relative;
+        max-width: 46.56%;
+        margin-top: 80px;
+        flex: 0 0 46.56%;
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: -39px;
+            top: 0;
+            height: 41px;
+            width: 39px;
+            background: url('../images/page-banner-icon.svg') no-repeat;
+            background-size: contain;
+            transform: translateX(-100%);
+        }
+
+        .title {
+            color: #fff;
+            line-height: 80px;
+            font-size: 46px;
+            font-weight: 800;
+            margin-bottom: 0;
+        }
+        
+        .desc {
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.67;
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        .btn-main {
+            background: #fff;
+            padding: 23px 40px;
+            border: 1px solid #fff;
+            color: $red;
+
+            &:hover {
+                background: $red;
+                color: #fff;
+            }
+        }
+    }
+
+    .form-register-landing {
+        flex: 0 0 calc(53.44% - 85px);
+        max-width: calc(53.44% - 85px);
+        border-radius: 20px;
+        background: #fff;
+        padding: 45px 32px 33px;
+        box-shadow: 0 0 30px 0 rgba(#000, 0.1);
+        z-index: 2;
+
+        .contact-form-heading {
+            position: relative;
+            margin: 0 10% 10px;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -45px;
+                left: 50%;
+                width: 128px;
+                height: 108px;
+                background: url('../images/landing-page-hat.svg') no-repeat #fff;
+                border-radius: 50%;
+                background-size: 50%;
+                background-position: center center;
+                transform: translate(-50%, -50%);
+            }
+
+            h3 {
+                position: relative;
+                color: #000;
+                font-size: 24px;
+                line-height: 1.4;
+                font-weight: 700;
+            }
+        }
+
+        .contact-form-row {
+            margin-bottom: 30px;
+        }
+
+        .btn-main {
+            width: 100%;
+            border-radius: 3px;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+    }
+
+    .form-register-banner {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translateX(15%);
+        width: 78%;
+        max-width: 908px;
+    }
+}
+
+.contact-form-row {
+    display: flex;
+    row-gap: 10px;
+    column-gap: 18px;
+    flex-wrap: wrap;
+
+    .contact-form-line {
+        position: relative;
+
+        flex: 0 0 calc(50% - 9px);
+        max-width: calc(50% - 9px);
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #000;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            border-radius: 3px;
+            border: 1px solid #EDEDED;
+            padding: 14px 30px 14px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+
+            &::placeholder {
+                line-height: 17px;
+                font-size: 14px;
+                font-weight: 400;
+                color: #000;
+            }
+
+            &:focus {
+                border: 1px solid $red;
+            }
+        }
+
+        select {
+            appearance: none;
+        }
+
+        .input-select {
+            select {
+                background: url('../images/input-select.svg') no-repeat;
+                background-position: center right 18px;
+            }
+        }
+
+        textarea {
+            height: 122px;
+            resize: none;
+        }
+    }
+
+    .contact-form-line-full {
+        max-width: 100%;
+        flex: 0 0 100%;
+
+        input {
+            accent-color: #000;
+        }
+    }
+}
+
+.study-method {
+    margin-bottom: 100px;
+
+    .study-method-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        column-gap: 4.5%;
+    }
+
+    .study-method-content {
+        margin-bottom: 70px;
+
+        h4 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 1.67;
+            margin-bottom: 28px;
+            color: $brown;
+        }
+
+        li {
+            padding-left: 25px;
+            margin-left: 27px;
+            font-size: 16px;
+            background: url('../images/check.svg') no-repeat;
+            background-size: 15px 10px;
+            background-position: left top 4px;
+            color: $brown;
+
+            p {
+                font-size: 16px;
+                line-height: 1.2;
+                margin-bottom: 17px;
+            }
+
+            ul {
+                margin: 0 0 23px 20px;
+            }
+
+            li {
+                list-style: disc;
+                background: none;
+                padding-left: 0;
+                font-weight: 600;
+                margin-bottom: 10px;
+
+                &::marker {
+                    color: $red;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .study-method-banner {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+.lecturers {
+    position: relative;
+    padding: 160px 0 250px;
+    background: $beige;
+    overflow: hidden;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: url('../images/lecturers-wave.png') repeat-x;
+        background-size: contain;
+        aspect-ratio: 1600/74;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: url('../images/lecturers-wave-2.svg') repeat-x;
+        background-size: contain;
+        aspect-ratio: 1600/267;
+    }
+
+    .heading-block {
+        margin-bottom: 38px;
+
+        .title {
+            font-size: 36px;
+        }
+    }
+
+    .lecturers-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 7%;
+        row-gap: 68px;
+    }
+
+    .lecturer-item {
+        flex: 0 0 14.4%;
+        max-width: max-content;
+        min-width: fit-content;
+        text-align: center;
+
+        .lecturer-img {
+            padding: 12px;
+            border-radius: 50%;
+            border: 1px solid $blue;
+            margin: 0 auto 7px;
+            width: 150px;
+            aspect-ratio: 1;
+
+            img {
+                border-radius: 50%;
+                aspect-ratio: 1;
+            }
+        }
+
+        .lecturer-name {
+            font-size: 18px;
+            line-height: 1.67;
+            font-weight: 800;
+            color: $blue;
+        }
+    }
+}
+
+.gift {
+    position: relative;
+    padding: 150px 0 120px;
+    background: $beige;
+    overflow: hidden;
+    margin-bottom: 136px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: url('../images/lecturers-wave.png') repeat-x;
+        background-size: contain;
+        aspect-ratio: 1600/74;
+    }
+
+    .heading-block {
+        margin-bottom: 62px;
+
+        .title {
+            margin-bottom: 0;
+        }
+    }
+
+    .gift-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .gift-content {
+        flex: 0 0 41.2%;
+        max-width: 41.2%;
+        color: $brown;
+
+        h4 {
+            font-size: 26px;
+            line-height: 1.2;
+            font-weight: 800;
+            margin-bottom: 26px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 26px;
+            line-height: 1.875;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .gift-banner {
+        flex: 0 0 51.7%;
+        max-width: 51.7%; 
+    }
+}
+
+.partners {
+    &.partners-landing {
+        .heading-block {    
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.form-test {
+    background: $red;
+    padding: 116px 0 129px;
+    color: #fff;
+
+    .heading-block {
+        margin-bottom: 54px;
+
+        .sub-title {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 0;
+        }
+
+        .title {
+            font-size: 58px;
+            line-height: 1.2;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .desc {
+            font-size: 18px;
+            line-height: 1.67;
+            color: #fff;
+        }
+    }
+
+    .form-test-landing {
+        max-width: 690px;
+        margin: 0 auto;
+        padding: 45px 40px 41px;
+        border-radius: 20px;
+        background: #fff;
+        margin-bottom: 53px;
+
+        .contact-form-row {
+            margin-bottom: 30px;
+        }
+
+        .btn-main {
+            width: 100%;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+    }
+
+    .form-test-note {
+        text-align: center;
+        font-size: 16px;
+        line-height: 1.25;
+        margin: 0 28px;
+    }
+}
+
+@include min-landscape {
+    .study-method {
+        .heading-block {
+            margin-bottom: 32px;
+
+            .title {
+                font-size: 36px;
+                line-height: 1.67;
+            }
+        }
+    }
+
+    .gift {
+        .heading-block {
+            .title {
+                font-size: 36px;
+            }
+        }
+    }
+
+    .partners {
+        &.partners-landing {
+            .heading-block {    
+                .title {
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}
+
+@include extra-desktop {
+    .form-register {
+        .form-register-banner {
+            transform: translateX(0%);
+        }
+    }
+}
+
+@include tablet {
+    .form-register {
+        .form-register-wrap {
+            padding: 15px 0 50px;
+        }
+
+        .heading-block {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .form-register-landing {
+            position: relative;
+            max-width: 100%;
+            flex: 0 0 100%;
+            transform: translateY(0);
+            margin-top: 135px;
+        }
+
+        .form-register-banner {
+            display: none;
+        }
+    }
+
+    .study-method {
+        .study-method-wrap {
+            flex-wrap: wrap;
+        }
+
+        .study-method-banner {
+            flex: 0 0 100%;
+            max-width: 582px;
+            margin: 0 auto;
+        }
+    }
+
+    .lecturers {
+        padding: 80px 0 160px;
+    }
+
+    .gift {
+        .heading-block {
+            margin-bottom: 15px;
+        }
+
+        .gift-wrap {
+            flex-wrap: wrap;
+            row-gap: 12px;
+        }
+
+        .gift-content, .gift-banner {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+}
+
+@include landscape-phone {
+    .lecturers {
+        .heading-block {
+            margin-bottom: 42px;
+        }
+
+        .container-lecturers {
+            max-width: 100%;
+            padding-left: calc(50vw - 250px);
+            padding-right: 0;
+        }
+
+        .lecturers-list {
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            column-gap: 40px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-right: 20px;
+        }
+
+        .lecturer-item {
+            scroll-snap-align: start;
+            flex: 0 0 max-content;
+        }
+    }
+
+    .study-method {
+        .study-method-content {
+            margin-bottom: 32px;
+
+            h4 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+
+            li {
+                font-size: 14px;
+
+                p {
+                    font-size: 14px;
+                    margin-bottom: 10px;
+                }
+
+                ul {
+                    margin: 0 0 23px 5px;
+                }
+            }
+        }
+    }
+
+    .gift {
+        padding: 40px 0;
+
+        .gift-content {
+            h4 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+                line-height: 2;
+            }
+        }
+    }
+}
+
+@include extra-mobile {
+    .form-register {
+        margin-bottom: 42px;
+
+        .logo {
+            img {
+                max-height: 90px;
+            }
+        }
+
+        .heading-block {
+            .title {
+                font-size: 34px;
+                margin-bottom: 0;
+            }
+
+            .desc {
+                font-size: 14px;
+                line-height: 2.14;
+            }
+
+            .btn-main {
+                padding: 12px 18px;
+            }
+        }
+
+        .form-register-wrap {
+            padding: 5px 0 50px;
+        }
+
+        .form-register-landing {
+            margin-top: 83px;
+            padding: 53px 28px 43px;
+
+            .contact-form-heading {
+                margin-bottom: 15px;
+
+                &:before {
+                    width: 104px;
+                    height: 88px;
+                }
+            }
+
+            .contact-form-row {
+                margin-bottom: 15px;
+            }
+
+            .btn-main {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+    }
+
+    .contact-form-row {
+        row-gap: 15px;
+
+        .contact-form-line-full {
+            input, textarea, select {
+                font-size: 12px;
+                line-height: 15px;
+
+                &::placeholder {
+                    font-size: 12px;
+                    line-height: 15px;
+                }
+            }
+        }
+
+        .contact-form-line-full-mb {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+
+    .study-method {
+        margin-bottom: 58px;
+    }
+
+    .lecturers {
+        padding: 40px 0 100px;
+        margin-bottom: 30px;
+
+        .container-lecturers {
+            padding-left: 20px;
+        }
+
+        .heading-block {
+            .title {
+                font-size: 28px;
+            }
+        }
+
+        .lecturer-item {
+            .lecturer-img {
+                width: 90px;
+            }
+
+            .lecturer-name {
+                font-size: 15px;
+                line-height: 2;
+            }
+        }
+    }
+
+    .gift {
+        margin-bottom: 25px;
+
+        .heading-block {
+            margin-bottom: 15px;
+        }
+    }
+
+    .partners {
+        &.partners-landing {
+            .heading-block {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .form-test {
+        padding :20px 0 32px;
+
+        .heading-block  {
+            margin-bottom: 26px;
+
+            .sub-title {
+                font-size: 20px;
+                font-weight: 800;
+                line-height: 2.1;
+            }
+
+            .title {
+                font-size: 28px;
+                font-weight: 800;
+                margin-bottom: 5px;
+            }
+
+            .desc {
+                font-size: 13px;
+                line-height: 2.1;
+            }
+        }
+
+        .form-test-landing {
+            .btn-main {
+                padding: 12px 20px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .contact-form-row {
+        .contact-form-line {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+}

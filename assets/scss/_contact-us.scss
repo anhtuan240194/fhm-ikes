@@ -1,0 +1,296 @@
+.page-banner {
+    &.contact-banner {
+        padding: 133px 0;
+        margin-bottom: 83px;
+        text-align: center;
+
+        .heading-block {
+            max-width: 100%;
+            margin-top: 0;
+
+            .desc {
+                text-align: center;
+                max-width: 644px;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+.branchs {
+    .heading-block {
+        margin-bottom: 33px;
+
+        .title {
+            margin-bottom: 10px;
+            color: $brown;
+
+            .icon-title {
+                &:before {
+                    content: '';
+                    left: -12px;
+                    top: -55px;
+                }
+            }
+        }
+
+        .desc {
+            text-align: left;
+            font-size: 18px;
+            color: $brown;
+        }
+    }
+
+    .filter-branch {
+        position: relative;
+        padding: 10px 45px 10px 10px;
+        background: url('../images/arrow-down.svg') no-repeat #F3F3F3;
+        background-size: 13px;
+        background-position: right 20px center;
+        border-radius: 6px;
+        display: inline-block;
+        margin-bottom: 33px;
+
+        &.active {
+            .filter-list {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(100%);
+            }
+        }
+
+        .filter-branch-name {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-left: 15px;
+        }
+
+        .filter-list {
+            position: absolute;
+            left: 55px;
+            padding: 10px 15px;
+            background: #f3f3f3;
+            width: 160px;
+            border-radius: 6px;
+            bottom: 0px;
+            transform: translateY(calc(100% + 15px));
+            opacity: 0;
+            visibility: hidden;
+            box-shadow: 0 0 5px 0 rgba(#000, 0.2);
+            max-height: 190px;
+            overflow-y: auto;
+            transition: all 0.35s ease;
+
+            label {
+                display: block;
+                position: relative;
+                width: 100%;
+                padding: 5px 0;
+
+                span {
+                    font-size: 16px;
+                    line-height: 1.6;  
+                }
+            }
+
+            input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                visibility: hidden;
+                opacity: 0;
+            }
+            
+        }
+    }
+
+    .list-branch {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 34px;
+        row-gap: 24px;
+    }
+
+    .branch-item {
+        border-radius: 10px;
+        border: 1px solid #D9D9D9;
+
+        .branch-item-head {
+            display: flex;
+            align-items: flex-start;
+            column-gap: 15px;
+            padding: 27px 19px 33px;
+
+            .branch-icon {
+                flex: 0 0 59px;
+                max-width: 59px;
+                padding: 10px;
+                border-radius: 50px;
+                background: $red;
+            }
+
+            .branch-info {
+                h4 {
+                    margin-bottom: 5px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 1.67;
+
+                }
+
+                p {
+                    margin-bottom: 5px;
+                }
+            } 
+
+            .branch-messenger {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+                font-weight: 600;
+                color: $red;
+
+                img {
+                    flex: 0 0 20px;
+                    max-width: 20px;
+                }
+            }
+        }
+
+        .branch-map {
+            margin-bottom: 5px;
+
+            iframe {
+                aspect-ratio: 364/209;
+                width: 100%;
+                height: initial;
+            }
+        }
+
+        .branch-view-images {
+            padding: 28px 19px;
+            font-weight: 600;
+            color: $red;
+        }
+    }
+
+    .list-images {
+        display: none;
+    }
+}
+
+
+.cta-contact-us {
+    padding: 110px 0 270px;
+
+    .heading-block {
+        margin-bottom: 23px;
+
+        .title {
+            font-size: 48px;
+            line-height: 1.33;
+
+            .icon-title {
+                &:before {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    .cta-contact-left {
+        max-width: 44%;
+        flex: 0 0 44%;
+    }
+
+    .register-contact-us {
+        background: #fff;
+        border-radius: 10px;
+        padding: 40px 20px;
+
+        .contact-form-row {
+            margin-bottom: 40px;
+            row-gap: 30px;
+        }
+
+        .btn-main {
+            width: 100%;
+        }
+    }
+
+    .cta-contact-banner {
+        position: absolute;
+        width: 47.875%;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+}
+
+@include tablet {
+    .branchs {
+        .list-branch {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .cta-contact-us {
+        .cta-contact-left {
+            max-width: 100%;
+            flex: 0 0 100%;
+        }
+
+        .cta-contact-banner {
+            display: none;
+        }
+    }
+}
+
+@include landscape-phone {
+    .page-banner {
+        &.contact-banner {
+            padding: 60px 0;
+
+            .heading-block {
+                .title {
+                    font-size: 34px;
+                }
+            }
+        }
+
+    }
+
+    .branchs {
+        .list-branch {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@include extra-mobile {
+    .page-banner {
+        &.contact-banner {
+            padding: 18px 0 31px;
+            text-align: left;
+
+            .heading-block {
+                .desc {
+                    font-size: 14px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+
+    .cta-contact-us {
+        padding: 34px 0 96px;   
+
+        .heading-block {
+            .title {
+                font-size: 28px;
+            }
+        }
+    }
+}

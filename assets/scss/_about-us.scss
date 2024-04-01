@@ -1,0 +1,361 @@
+.page-banner {
+    &.about-banner {
+        padding: 90px 0 89px;
+        overflow: visible;
+        margin-bottom: 192px;
+    
+        .heading-block {
+            margin-top: 0;
+        }
+    
+        .page-banner-img {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            transform: translateY(55%);
+        }
+    }
+}
+
+.about-ikes {
+    &.module-about-us {
+        .heading-block {
+            margin-bottom: 56px;
+    
+            .title {
+                font-size: 36px;
+
+                &:before {
+                    content: none;
+                }
+            }
+    
+            .desc {
+                text-align: left;
+                margin: 0;
+
+                p {
+                    &:first-child {
+                        margin: 0 0 22px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mission {
+    margin-bottom: 88px;
+
+    .mission-item {
+        display: flex;
+        justify-content: space-between;
+        background: $beige;
+        max-height: 600px;
+
+        .mission-image {
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            img {
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .mission-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 70px 8.2%;
+
+            h4 {
+                font-size: 36px;
+                line-height: 1.67;
+                font-weight: 700;
+                margin-bottom: 4px;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 1.8;
+            }
+        }
+    }
+
+    .mission-item-reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+.why-choosee {
+    &.module-about-us {
+        padding: 0 0 0;
+        background: #fff;
+        margin-bottom: 80px;
+
+        .heading-block {
+            margin-bottom: 79px;
+
+            .title {
+                font-size: 36px;
+            }
+        }
+
+        .why-choosee-list {
+            flex: 0 0 100%;
+            max-width: 100%;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 12.9%;
+            row-gap: 69px;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+
+        .why-choosee-item {
+            box-shadow: none;
+            padding: 0;
+        }
+    }
+}
+
+.core-values {
+    padding: 141px 0 107px;
+    background: url('../images/core-value-back.svg') no-repeat $beige;
+    background-size: 81%;
+    background-position: center right;
+    margin-bottom: 100px;
+}
+
+.activities {
+    margin-bottom: 132px;
+
+    .heading-block {
+        margin-bottom: 68px;
+
+        .title {
+            font-size: 36px;
+        }
+    }
+
+    .list-activity {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .activity-item {
+        border-radius: 10px;
+        aspect-ratio: 360/340;
+        overflow: hidden;
+
+        &:hover {
+            img {
+                transform: scale(1.05);
+            }
+        }
+
+        img {
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.35s ease;
+        }
+    }
+}
+
+@include tablet {
+    .page-banner {
+        &.about-banner {
+            padding: 50px 0;
+            margin-bottom: 90px;
+        }
+    }
+
+    .mission {
+        .mission-item {
+            .mission-content {
+                padding: 40px 5%;
+            }
+        }
+    }
+
+    .why-choosee {
+        &.module-about-us {
+            .why-choosee-list {
+                column-gap: 8%;
+                row-gap: 40px;
+            }
+        }
+    }
+
+    .core-values {
+        padding: 80px 0px 40px;
+        background-size: 150%;
+        background-position: center;
+    }
+
+    .activities {
+        .list-activity {
+            gap: 24px;
+        }
+    }
+}
+
+@include landscape-phone {
+    .about-ikes {
+        &.module-about-us {
+            .heading-block {
+                text-align: center;
+            }
+        }
+    }
+
+    .mission {
+        .mission-item {
+            flex-wrap: wrap;
+            max-height: initial;
+
+            .mission-image {
+                flex: 0 0 100%;
+                max-width: 100%;
+                max-height: 291px;
+            }
+
+            .mission-content {
+                padding: 10px 20px 20px;
+
+                h4 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .why-choosee {
+        &.module-about-us {
+            .why-choosee-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    }
+
+    .activities {
+        overflow: hidden;
+
+        .container-fluid-mb {
+            max-width: 100%;
+            margin: 0 calc(50% - 270px);
+        }
+
+        .list-activity {
+            display: flex;
+            gap: 40px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            padding-right: calc(50% - 250px);
+        }
+
+        .activity-item {
+            flex: 0 0 calc((100% - 40px)/3*2);
+            max-width: calc((100% - 40px)/3*2);
+            scroll-snap-align: start;
+        }
+    }
+}
+
+@include extra-mobile {
+    .page-banner {
+        &.about-banner {
+            padding: 18px 0 7px;
+            margin-bottom: 31px;
+        }
+    }
+
+    .mission {
+        margin-bottom: 36px;
+        background: $beige;
+        padding: 43px 0 23px;
+
+        .mission-item {
+            .mission-image {
+                padding: 0 20px;
+            }
+
+            .mission-content {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .why-choosee {
+        &.module-about-us {
+            margin-bottom: 32px;
+
+            .heading-block {
+                margin-bottom: 0px;
+
+                .title {
+                    font-size: 28px;
+                    line-height: 1.5;
+                }
+            }
+
+            .why-choosee-list {
+                grid-template-columns: 1fr;
+            }
+
+            .why-choosee-item {
+                padding: 22px 16.75% 27px 39px;
+                box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.05);
+            }
+        }
+    } 
+
+    .core-values {
+        padding: 24px 0 6px;
+        margin-bottom: 20px;
+    }
+
+    .about-ikes {
+        &.module-about-us {
+            .heading-block {
+                margin-bottom: 15px;
+
+                .title {
+                    font-size: 28px;
+                    margin-bottom: 15px;
+                }
+
+                .desc {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .activities {
+        .heading-block {
+            margin-bottom: 15px;
+
+            .title {
+                font-size: 28px;
+                margin: 0 5% 15px;
+            }
+        }
+
+        .container-fluid-mb {
+            margin: 0;
+            padding: 0 0 0 20px;
+        }
+
+        .list-activity {
+            padding-right: 20px;
+        }
+    }
+}

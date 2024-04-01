@@ -1,0 +1,190 @@
+.page-banner {
+    &.detail-recruitment {
+        margin-bottom: 136px;
+
+        .heading-block {
+            max-width: 45.6%;
+        }
+
+        .page-banner-img {
+            flex: 1;
+            transform: translateX(10%);
+        }
+    }
+}
+
+.detail-recruitment {
+    margin-bottom: 138px;
+
+    .detail-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 35px;
+
+        .detail-head-des {
+            flex: 0 0 100%;
+            max-width: 617px;
+
+            h1 {
+                font-size: 36px;
+                margin-bottom: 20px;
+                font-weight: 800;
+                line-height: 1.2;
+            }
+    
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        }
+
+        .btn-recruitment {
+            padding: 16px 40px;
+            font-size: 16px;
+        }
+    }
+
+    .detail-info {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px 36px;
+        padding: 15px 20px;
+        border: 1px solid #D3D3D3;
+        border-radius: 10px;
+        margin-bottom: 53px;
+
+        .detail-info-item {
+            h4 {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .detail-content {
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 26px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 30px;
+
+            li {
+                font-size: 16px;
+                list-style: disc;
+                margin-bottom: 20px;
+            }
+        }
+
+        a {
+            color: $red;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        b {
+            color: $red;
+            font-weight: 700;
+            display: block;
+        }
+    }
+}
+
+.cruitments {
+    &.module-detail-recruitment {
+        margin-bottom: 320px;
+    }
+}
+
+@include desktop {
+    .detail-recruitment {
+        .detail-info {
+            flex-wrap: wrap;
+
+            .detail-info-item {
+                flex: 0 0 calc(50% - 18px);
+            }
+        }
+    }
+}
+
+@include tablet {
+    .page-banner {
+        &.detail-recruitment {
+            .heading-block {
+                max-width: 100%;
+                margin-top: 60px;
+            }
+        }
+    }
+
+    .cruitments {
+        &.module-detail-recruitment {
+            margin-bottom: 240px;
+        }
+    }
+}
+
+@include landscape-phone {
+    .page-banner {
+        &.detail-recruitment {
+            margin-bottom: 80px;
+
+            .heading-block {
+                max-width: 100%;
+                margin-top: 0px;
+            }
+        }
+    } 
+    
+    .detail-recruitment {
+        margin-bottom: 80px;
+    }
+
+    .cruitments {
+        &.module-detail-recruitment {
+            margin-bottom: 160px;
+        }
+    }
+}
+
+@include mobile {
+    .detail-recruitment {
+        .detail-head {
+            .detail-head-des {
+                h1 {
+                    font-size: 28px;
+                }
+            }
+
+            .btn-recruitment {
+                padding: 10px 24px;
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@include small-mobile {
+    .detail-recruitment {
+        .detail-info {
+            .detail-info-item {
+                flex: 0 0 100%;
+            }
+        }
+    }
+}

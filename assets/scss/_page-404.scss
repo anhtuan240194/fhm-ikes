@@ -1,0 +1,94 @@
+.page-not-found {
+    background: url('../images/landing-form-wave.svg') no-repeat $red;
+    background-position: right center;
+    min-height: 100vh;
+
+    .page-not-found-wrap {
+        padding: 15px 0px;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 63px;
+
+        img {
+            max-height: 144px;
+            width: initial;
+        }
+    }
+
+    .icon-check {
+        text-align: center;
+        margin-bottom: 43px;
+
+        img {
+            max-height: 93px;
+            width: initial;
+        }
+    }
+
+    .content {
+        text-align: center;
+        color: #fff;
+        max-width: 747px;
+        margin: 0 auto 80px;
+
+        h1 {
+            font-size: 46px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 17px;
+        }
+
+        p {
+            font-size: 24px;
+            line-height: 1.875;
+        }
+
+        a {
+            text-decoration: underline;
+            color: #fff;
+
+            &:hover {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@include extra-mobile {
+    .page-not-found {
+        .logo {
+            img {
+                max-height: 89px;
+            }
+        }
+
+        .icon-check {
+            margin-bottom: 25px;
+
+           img {
+            max-height: 45px;
+           }
+        }
+
+        .content {
+            h1 {
+                font-size: 21px;
+                line-height: 1.5;
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            a {
+                font-weight: 400;
+            }
+        }
+    }
+}

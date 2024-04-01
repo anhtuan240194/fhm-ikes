@@ -1,0 +1,311 @@
+.page-banner {
+    &.detail-teacher {
+        margin-bottom: 90px;
+        padding: 25px 0 120px;
+        overflow: visible;
+
+        .heading-block {
+            .sub-title {
+                font-size: 16px;
+                font-weight: 600;
+                color: $red;
+                margin-bottom: 0;
+            }
+
+            .title {
+                font-size: 46px;
+                font-weight: 800;
+                line-height: 1.5;
+                margin-bottom: 5px;
+                color: #000;
+            }
+
+            .desc {
+                p {
+                    font-size: 18px;
+                    color: $brown;
+                }
+
+                blockquote {
+                    position: relative;
+                    font-size: 28px;
+                    line-height: 1.5em;
+                    font-weight: 500;
+                    color: #3b3b3b;
+                    margin-top:70px;
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 36px;
+                        height: 28px;
+                        background: url('../images/quote-icon.svg') no-repeat;
+                        background-size: contain;
+                        left: 0;
+                        top: 0;
+                        transform: translateY(calc(-100% - 10px));
+                    }
+                }
+            }
+        }
+
+        .page-banner-img {
+            position: absolute;
+            right: 0;
+
+            img {
+                max-width: 393px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.teacher-level {
+    margin-bottom: 70px;
+
+    .teacher-level-wrap {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 8.62%;
+        row-gap: 20px;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 9px 25px 0  rgba(#000, 0.07);
+    }
+
+    .level-item {
+        max-width: fit-content;
+        display: flex;
+        align-items: flex-start;
+        column-gap: 19px;
+
+        .level-icon {
+            flex: 0 0 27px;
+            max-width: 27px;
+            margin-top: 5px;
+
+            img {
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: 800;
+        }
+
+        .sum {
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+}
+
+.teacher-experience {
+    margin-bottom: 70px;
+
+    .sum {
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 14px;
+            color: $brown;
+        }
+    }
+}
+
+.teacher-philosophy {
+    margin-bottom: 80px;
+
+    .heading-block {
+        margin-bottom: 25px;
+    }
+
+    .teacher-video {
+        border-radius: 19px;
+        overflow: hidden;
+        margin-bottom: 100px;
+
+        video, iframe {
+            width: 100%;
+            height: initial;
+            aspect-ratio: 16/9;
+        }
+    }
+
+    .teacher-des {
+        h3 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            color: $brown;
+        }
+    }
+}
+
+.activities {
+    &.module-teacher {
+        margin-bottom: 180px;
+
+        .heading-block {
+            margin-bottom: 40px;
+
+            .title {
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+@include desktop {
+    .page-banner{
+        &.detail-courses-banner {
+            .heading-block {
+                max-width: 500px;
+            }
+        }
+    }
+
+    .teacher-level {
+        .teacher-level-wrap {
+            column-gap: 40px;
+        }
+    }
+}
+
+@include tablet {
+    .page-banner {
+        &.detail-teacher {
+            background: #f7f1eb;
+            padding: 25px 0 40px;
+
+            .page-banner-wrap {
+                flex-wrap: wrap-reverse;
+                gap: 40px 20px;
+            }
+
+            .heading-block {
+                flex: 0 0 100%;
+                max-width: 100%;
+                text-align: center;
+
+                .desc {
+                    text-align: center;
+
+                    blockquote {
+                        &:before {
+                            left: 50%;
+                            transform: translate(-50%, calc(-100% - 10px));
+                        }
+                    }
+                }
+            }
+
+            .page-banner-img {
+                display: block;
+                flex: 0 0 100%;
+                max-width: 100%;
+                position: relative;
+                text-align: center;
+            }
+        }
+    }
+
+    .teacher-level {
+        .teacher-level-wrap {
+            grid-template-columns: auto auto;
+            row-gap: 20px;
+        }
+    }
+}
+
+@include landscape-phone {
+    .page-banner {
+        &.detail-teacher {
+            padding: 25px 0 30px;
+        }
+    }
+
+    .teacher-level {
+        .teacher-level-wrap {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+@include extra-mobile {
+    .page-banner {
+        &.detail-teacher {
+            .heading-block {
+                .title {
+                    font-size: 34px;
+                }
+
+                .desc {
+                    p {
+                        font-size: 16px;
+                    }
+
+                    blockquote {
+                        font-size: 18px;
+                        margin-top: 50px;
+
+                        &:before {
+                            width: 24px;
+                            height: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .activities {
+        &.module-teacher {
+            margin-bottom: 80px;
+            
+            .heading-block {
+                .title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    .teacher-philosophy {
+        .teacher-video {
+            margin-bottom: 40px;
+        }
+    }
+
+    .activities {
+        &.module-teacher {
+            margin-bottom: 80px;
+
+            .heading-block {
+                margin-bottom: 20px;
+
+                .title {
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+}
