@@ -122,6 +122,18 @@
 }
 
 @include tablet {
+    .page-banner{
+        &.page-banner-normal {
+            .page-banner-img {
+                text-align: center;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+    
     .cruitments {
         margin-bottom: 80px;
         

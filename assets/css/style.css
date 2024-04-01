@@ -3161,6 +3161,10 @@ button {
     padding: 50px 0;
     margin-bottom: 90px;
   }
+  .page-banner.about-banner .page-banner-img {
+    position: relative;
+    transform: none;
+  }
   .mission .mission-item .mission-content {
     padding: 40px 5%;
   }
@@ -3294,7 +3298,7 @@ button {
   position: relative;
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 40px 20px;
 }
 .page-banner .heading-block {
   position: relative;
@@ -3332,9 +3336,6 @@ button {
   flex: 0 0 calc(53% - 20px);
   max-width: calc(53% - 20px);
   text-align: right;
-}
-.page-banner .page-banner-img img {
-  width: initial;
 }
 
 .list-course {
@@ -3437,6 +3438,9 @@ button {
   .page-banner {
     padding: 35px 0;
   }
+  .page-banner .page-banner-wrap {
+    flex-wrap: wrap-reverse;
+  }
   .page-banner .heading-block {
     flex: 0 0 100%;
     max-width: 100%;
@@ -3446,7 +3450,12 @@ button {
     content: none;
   }
   .page-banner .page-banner-img {
-    display: none;
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .page-banner .page-banner-img img {
+    width: 100%;
   }
   .course-list-grid {
     grid-template-columns: 1fr 1fr;
@@ -5601,6 +5610,9 @@ footer .footer-bottom .footer-bottom-link .nav-item:not(:last-child):before {
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .page-banner.schedule-banner .page-banner-img {
+    transform: none;
+  }
   .schedule-opening .schedule-table-wrap {
     overflow-x: auto;
   }
@@ -5878,6 +5890,10 @@ footer .footer-bottom .footer-bottom-link .nav-item:not(:last-child):before {
   }
 }
 @media only screen and (max-width: 991.98px) {
+  .page-banner.teacher-banner .page-banner-img {
+    position: relative;
+    transform: none;
+  }
   .reviews .list-review {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -6001,6 +6017,12 @@ footer .footer-bottom .footer-bottom-link .nav-item:not(:last-child):before {
 }
 
 @media only screen and (max-width: 991.98px) {
+  .page-banner.page-banner-normal .page-banner-img {
+    text-align: center;
+  }
+  .page-banner.page-banner-normal .page-banner-img img {
+    width: 100%;
+  }
   .cruitments {
     margin-bottom: 80px;
   }

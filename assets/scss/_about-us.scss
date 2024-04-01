@@ -168,6 +168,11 @@
         &.about-banner {
             padding: 50px 0;
             margin-bottom: 90px;
+
+            .page-banner-img {
+                position: relative;
+                transform: none;
+            }
         }
     }
 

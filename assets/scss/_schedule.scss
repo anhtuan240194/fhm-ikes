@@ -436,6 +436,14 @@
 
 
 @include tablet {
+    .page-banner{
+        &.schedule-banner {
+            .page-banner-img {
+                transform: none;
+            }
+        }
+    }
+    
     .schedule-opening {
         .schedule-table-wrap {
             overflow-x: auto;

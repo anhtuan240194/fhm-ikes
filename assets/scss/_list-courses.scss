@@ -8,7 +8,7 @@
         position: relative;
         display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 40px 20px;
     }
 
     .heading-block {
@@ -52,10 +52,6 @@
         flex: 0 0 calc(53% - 20px);
         max-width: calc(53% - 20px);
         text-align: right;
-
-        img {
-            width: initial;
-        }
     }
 }
 
@@ -189,6 +185,10 @@
     .page-banner {
         padding: 35px 0;
 
+        .page-banner-wrap {
+            flex-wrap: wrap-reverse;
+        }
+
         .heading-block {
             flex: 0 0 100%;
             max-width: 100%;
@@ -200,7 +200,13 @@
         }
 
         .page-banner-img {
-            display: none;
+            flex: 0 0 100%;
+            max-width: 100%;
+            text-align: center;
+
+            img {
+                width: 100%;
+            }
         }
     }
 

@@ -72,6 +72,14 @@
 }
 
 @include tablet {
+    .page-banner {
+        &.teacher-banner {
+            .page-banner-img {
+                position: relative;
+                transform: none;
+            }
+        }
+    }
     .reviews {
         .list-review {
             grid-template-columns: repeat(2, 1fr);
