@@ -6673,6 +6673,9 @@ footer .footer-bottom .footer-bottom-link .nav-item:not(:last-child):before {
     width: 24px;
     height: 19px;
   }
+  .page-banner.detail-teacher .page-banner-img img {
+    max-width: 100%;
+  }
   .activities.module-teacher {
     margin-bottom: 80px;
   }
