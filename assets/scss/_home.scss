@@ -1308,6 +1308,18 @@
   }
 }
 
+.popup-form {
+  .form-register-landing {
+    position: relative;
+  }
+
+  .btn-close {
+    right: 15px;
+    top: 15px;
+    position: absolute;
+  }
+}
+
 @keyframes tada {
   0%, 100% {
     transform: rotate(0deg);

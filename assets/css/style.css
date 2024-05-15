@@ -2476,6 +2476,15 @@ button {
   text-transform: capitalize;
 }
 
+.popup-form .form-register-landing {
+  position: relative;
+}
+.popup-form .btn-close {
+  right: 15px;
+  top: 15px;
+  position: absolute;
+}
+
 @keyframes tada {
   0%, 100% {
     transform: rotate(0deg);
