@@ -3589,17 +3589,28 @@ button {
 .form-register .form-register-landing {
   flex: 0 0 calc(53.44% - 85px);
   max-width: calc(53.44% - 85px);
+}
+.form-register .form-register-banner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateX(15%);
+  width: 78%;
+  max-width: 908px;
+}
+
+.form-register-landing {
   border-radius: 20px;
   background: #fff;
   padding: 45px 32px 33px;
   box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
-.form-register .form-register-landing .contact-form-heading {
+.form-register-landing .contact-form-heading {
   position: relative;
   margin: 0 10% 10px;
 }
-.form-register .form-register-landing .contact-form-heading:before {
+.form-register-landing .contact-form-heading:before {
   content: "";
   position: absolute;
   top: -45px;
@@ -3612,30 +3623,22 @@ button {
   background-position: center center;
   transform: translate(-50%, -50%);
 }
-.form-register .form-register-landing .contact-form-heading h3 {
+.form-register-landing .contact-form-heading h3 {
   position: relative;
   color: #000;
   font-size: 24px;
   line-height: 1.4;
   font-weight: 700;
 }
-.form-register .form-register-landing .contact-form-row {
+.form-register-landing .contact-form-row {
   margin-bottom: 30px;
 }
-.form-register .form-register-landing .btn-main {
+.form-register-landing .btn-main {
   width: 100%;
   border-radius: 3px;
   padding: 20px;
   font-size: 20px;
   font-weight: 600;
-}
-.form-register .form-register-banner {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  transform: translateX(15%);
-  width: 78%;
-  max-width: 908px;
 }
 
 .contact-form-row {
@@ -4053,19 +4056,21 @@ button {
   }
   .form-register .form-register-landing {
     margin-top: 83px;
+  }
+  .form-register-landing {
     padding: 53px 28px 43px;
   }
-  .form-register .form-register-landing .contact-form-heading {
+  .form-register-landing .contact-form-heading {
     margin-bottom: 15px;
   }
-  .form-register .form-register-landing .contact-form-heading:before {
+  .form-register-landing .contact-form-heading:before {
     width: 104px;
     height: 88px;
   }
-  .form-register .form-register-landing .contact-form-row {
+  .form-register-landing .contact-form-row {
     margin-bottom: 15px;
   }
-  .form-register .form-register-landing .btn-main {
+  .form-register-landing .btn-main {
     padding: 12px 20px;
     font-size: 14px;
   }

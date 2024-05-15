@@ -210,3 +210,16 @@ if(quickAccess) {
   })
   
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  //Show popup register form
+  const modalPopupRegister = new bootstrap.Modal('.popup-form .modal', {
+    keyboard: false
+  })
+  if(modalPopupRegister) {
+    setTimeout(() => {
+      modalPopupRegister.show(modalPopupRegister)
+    }, 2000)
+  }
+})

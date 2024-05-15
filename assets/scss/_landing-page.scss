@@ -89,50 +89,6 @@
     .form-register-landing {
         flex: 0 0 calc(53.44% - 85px);
         max-width: calc(53.44% - 85px);
-        border-radius: 20px;
-        background: #fff;
-        padding: 45px 32px 33px;
-        box-shadow: 0 0 30px 0 rgba(#000, 0.1);
-        z-index: 2;
-
-        .contact-form-heading {
-            position: relative;
-            margin: 0 10% 10px;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: -45px;
-                left: 50%;
-                width: 128px;
-                height: 108px;
-                background: url('../images/landing-page-hat.svg') no-repeat #fff;
-                border-radius: 50%;
-                background-size: 50%;
-                background-position: center center;
-                transform: translate(-50%, -50%);
-            }
-
-            h3 {
-                position: relative;
-                color: #000;
-                font-size: 24px;
-                line-height: 1.4;
-                font-weight: 700;
-            }
-        }
-
-        .contact-form-row {
-            margin-bottom: 30px;
-        }
-
-        .btn-main {
-            width: 100%;
-            border-radius: 3px;
-            padding: 20px;
-            font-size: 20px;
-            font-weight: 600;
-        }
     }
 
     .form-register-banner {
@@ -142,6 +98,53 @@
         transform: translateX(15%);
         width: 78%;
         max-width: 908px;
+    }
+}
+
+.form-register-landing {
+    border-radius: 20px;
+    background: #fff;
+    padding: 45px 32px 33px;
+    box-shadow: 0 0 30px 0 rgba(#000, 0.1);
+    z-index: 2;
+
+    .contact-form-heading {
+        position: relative;
+        margin: 0 10% 10px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -45px;
+            left: 50%;
+            width: 128px;
+            height: 108px;
+            background: url('../images/landing-page-hat.svg') no-repeat #fff;
+            border-radius: 50%;
+            background-size: 50%;
+            background-position: center center;
+            transform: translate(-50%, -50%);
+        }
+
+        h3 {
+            position: relative;
+            color: #000;
+            font-size: 24px;
+            line-height: 1.4;
+            font-weight: 700;
+        }
+    }
+
+    .contact-form-row {
+        margin-bottom: 30px;
+    }
+
+    .btn-main {
+        width: 100%;
+        border-radius: 3px;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 
@@ -670,25 +673,28 @@
 
         .form-register-landing {
             margin-top: 83px;
-            padding: 53px 28px 43px;
+        }
+    }
 
-            .contact-form-heading {
-                margin-bottom: 15px;
+    .form-register-landing {
+        padding: 53px 28px 43px;
 
-                &:before {
-                    width: 104px;
-                    height: 88px;
-                }
+        .contact-form-heading {
+            margin-bottom: 15px;
+
+            &:before {
+                width: 104px;
+                height: 88px;
             }
+        }
 
-            .contact-form-row {
-                margin-bottom: 15px;
-            }
+        .contact-form-row {
+            margin-bottom: 15px;
+        }
 
-            .btn-main {
-                padding: 12px 20px;
-                font-size: 14px;
-            }
+        .btn-main {
+            padding: 12px 20px;
+            font-size: 14px;
         }
     }
 
